@@ -91,8 +91,8 @@ becomes:
 }
 ```
 
-## Notes:
+## Notes:    
 
-Footer: Use what is currently on MyClickRewwards.com
-CSS: Use bootstrap framework
-Mobile: Turn top right nav-bar into hamburger menu (flyout menu) for mobile
+Footer: Use what is currently on MyClickRewards.com    
+CSS: Use bootstrap framework    
+Mobile: Turn top right nav-bar into hamburger menu (flyout menu) for mobile    
