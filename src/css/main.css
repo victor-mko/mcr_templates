@@ -212,10 +212,33 @@ body {
 .signup-up-form__survey-radio {
   font-size: 30px;
   margin-bottom: 45px;
+  position: relative;
 
-  &:first-child {
+  &_first {
      margin-right: 40px;
-   }
+  }
+
+  &::before {
+    border: 3px solid $white;
+    border-radius: 50%;
+    content: '';
+    display: inline-block;
+    height: 32px;
+    margin-right: 11px;
+    position: relative;
+    top: 5px;
+    width: 32px;
+  }
+}
+
+.sign-up-form input[type=radio] {
+  display: none;
+}
+
+/* Shame: too long selector. Used to create custom select */
+.sign-up-form input[type=radio]:checked + .signup-up-form__survey-radio::before {
+  background: transparent url('../images/checkbox.png') center no-repeat;
+  border-color: $light-blue;
 }
 
 .date-of-birth {
@@ -237,6 +260,16 @@ body {
 
   .input_email {
     margin-bottom: 23px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .signup-up-form__survey-radio_first {
+    margin-right: 12px;
+
+    &::before {
+       margin-right: 6px;
+    }
   }
 }
 
@@ -291,12 +324,50 @@ body {
   }
 }
 
+.btn_survey-skip {
+  background-color: transparent;
+  color: #4a4f4f;
+  display: inline-block;
+  font-size: 25px;
+  font-weight: 900;
+  margin-bottom: 150px;
+  padding: 10px;
+  transition: $transition;
+
+  &:hover,
+  &:active,
+  &:focus {
+     color: $primary-color;
+     text-decoration: none;
+  }
+}
+
+.btn_ad-skip {
+  margin-bottom: 122px;
+  max-width: 200px;
+}
+
+@media (min-width: 768px) {
+
+  .btn_survey-skip {
+    margin-bottom: 290px;
+  }
+}
+
 @media (min-width: 992px) {
   .btn {
     font-size: 41px;
     margin-bottom: 52px;
     padding-bottom: 24px;
     padding-top: 23px;
+  }
+
+  .btn_survey {
+    margin-bottom: 13px;
+  }
+
+  .btn_ad-skip {
+    margin-bottom: 122px;
   }
 }
 
@@ -380,6 +451,12 @@ body {
   transition: $transition;
 }
 
+@media (max-width: 768px) {
+  .navbar_empty {
+    display: none;
+  }
+}
+
 @media (min-width: 768px) {
   .navbar {
     left: 0;
@@ -429,6 +506,14 @@ body {
   &_survey {
      margin-bottom: 30px;
   }
+
+  &_ad {
+     margin-bottom: 24px;
+  }
+
+  &_thanks {
+    margin-bottom: 28px;
+  }
 }
 
 .register__text {
@@ -441,12 +526,23 @@ body {
 
   & > span {
       color: #fcd72b;
-    }
-}
+  }
 
-.register__text_survey {
-  color: $white;
-  margin-bottom: 23px;
+  &_survey {
+    color: $white;
+    letter-spacing: 1px;
+    margin-bottom: 29px;
+  }
+
+  &_subtitle {
+    margin-bottom: 40px;
+  }
+
+  &_thanks {
+     color: $white;
+     font-size: 30px;
+     margin-bottom: 14px;
+  }
 }
 
 .register__privacy {
@@ -457,6 +553,10 @@ body {
   margin-bottom: 23px;
   padding-left: 10px;
   padding-right: 10px;
+}
+
+.register__ad-image {
+  margin-bottom: 34px;
 }
 
 @media (min-width: 768px) {
@@ -483,12 +583,33 @@ body {
     &_survey {
        margin-bottom: 43px;
     }
+
+    &_ad {
+      margin-bottom: 24px;
+    }
+
+    &_thanks {
+      margin-bottom: 28px;
+    }
   }
 
   .register__text {
     font-size: 23px;
     line-height: 1.217;
     margin-bottom: 55px;
+
+    &_survey {
+       margin-bottom: 29px;
+    }
+
+    &_subtitle {
+      margin-bottom: 40px;
+    }
+
+    &_thanks {
+      font-size: 30px;
+      margin-bottom: 14px;
+    }
   }
 
   .register__text_second {
@@ -655,6 +776,49 @@ body {
     margin-left: auto;
     margin-right: auto;
     max-width: 400px;
+  }
+}
+
+/* Thankyou page */
+.thanks {
+
+  &__number {
+     color: #fcd72b;
+     font-size: 50px;
+  }
+
+  &__text {
+     color: $white;
+     font-size: 18px;
+     letter-spacing: 0.8px;
+     margin-bottom: 18px;
+     padding-top: 10px;
+     text-align: left;
+
+    & > span {
+      color: $primary-color;
+    }
+  }
+
+  &__text_last {
+     margin-bottom: 80px;
+  }
+
+  &__thumb-up {
+     margin-bottom: 45px;
+     padding-left: 16.66666%;
+     padding-right: 16.66666%;
+  }
+}
+
+/* thumb up */
+.thumb-up {
+
+  &__text {
+    color: $input-color;
+    font-size: 18px;
+    position: relative;
+    top: 8px;
   }
 }
 

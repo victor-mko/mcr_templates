@@ -11,7 +11,7 @@
 <body>
 <!-- header -->
 <header>
-  <nav class="navbar"></nav>
+  <nav class="navbar navbar_empty"></nav>
 </header> <!-- header -->
 <!-- main -->
 <section class="container main">
@@ -31,7 +31,7 @@
               If you win, where would you like your <span>prizes sent</span> to?
             </p>
           </div>
-          <form action="post" class="col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2 sign-up-form">
+          <form action="post" method="post" class="col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2 sign-up-form">
             <div class="row center-horizontal">
               <div class="col-xs-6">
                 <input type="text" name="first-name" class="input input_primary" placeholder="First Name" required>
@@ -71,7 +71,7 @@
                 <input type="text" name="address" class="input input_primary" placeholder="Shipping Address" required>
                 <input type="text" name="zip" class="input input_primary" placeholder="ZIP Code" required>
                 <input type="text" name="phone" class="input input_primary" placeholder="Phone Number" required>
-                <input type="submit" class="btn btn_submit" value="Submit">
+                <input type="submit" class="btn btn_sign-up" value="Submit">
               </div>
             </div>
           </form>
