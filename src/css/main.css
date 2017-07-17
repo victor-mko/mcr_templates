@@ -16,6 +16,7 @@ $orange: #ffa300;
 $yellow: #ffe218;
 $green: #9fd619;
 $blue: #3ab0ff;
+$light-blue: #309eff;
 
 $body-bg-color: #202127;
 $main-bg-color: #212227;
@@ -32,6 +33,8 @@ $button-stroke-color: #11120e;
 $input-color: #818181;
 
 $text-gray: #5d5f5f;
+
+$transition: all .2s ease-in-out;
 
 /* Fonts */
 @font-face {
@@ -104,6 +107,11 @@ body {
   }
 }
 
+.col-centered {
+  float: none;
+  margin: 0 auto;
+}
+
 /* UI */
 .color_primary {
   color: $primary-color;
@@ -123,6 +131,10 @@ body {
 
 .color_blue {
   color: $blue;
+}
+
+.color_light-blue {
+  color: $light-blue;
 }
 
 .text_gray {
@@ -145,11 +157,16 @@ body {
 
   &:focus {
     box-shadow: 0 0 13px 4px rgba(32, 173, 164, 0.71);
+  transition: $transition;
   }
 }
 
 .input_email {
   margin-bottom: 26px;
+}
+
+.sign-up-form {
+  color: $white;
 }
 
 .sign-up-form div[class^='col-xs'] {
@@ -160,6 +177,45 @@ body {
 .sign-up-form div[class='col-xs-12'] {
   padding-left: 0;
   padding-right: 0;
+}
+
+.sign-up-form__label {
+  color: $white;
+  cursor: pointer;
+  font-weight: lighter;
+  margin-bottom: 36px;
+  max-width: 315px;
+}
+
+.sign-up-form__label > a {
+  color: $white;
+  text-decoration: underline;
+  transition: $transition;
+}
+
+.sign-up-form__label > a {
+
+  &:active,
+  &:focus,
+  &:hover {
+     color: $primary-color;
+     transition: $transition;
+   }
+}
+
+.sign-up-form .sign-up-form__checkbox {
+  margin-right: 10px;
+  margin-top: 0;
+  vertical-align: middle;
+}
+
+.signup-up-form__survey-radio {
+  font-size: 30px;
+  margin-bottom: 45px;
+
+  &:first-child {
+     margin-right: 40px;
+   }
 }
 
 .date-of-birth {
@@ -180,7 +236,7 @@ body {
   }
 
   .input_email {
-    margin-bottom: 51px;
+    margin-bottom: 23px;
   }
 }
 
@@ -210,6 +266,7 @@ body {
   border: 1px solid $button-stroke-color;
   color: $black;
   font-weight: 600;
+  transition: $transition;
   &:hover,
   &:active,
   &:focus {
@@ -224,6 +281,7 @@ body {
   color: $white;
   font-weight: 900;
   margin-top: 9px;
+  transition: $transition;
   &:hover,
   &:active,
   &:focus {
@@ -319,6 +377,7 @@ body {
 .nav > li > a:hover,
 .nav > li > a:focus {
   background-color: $gray;
+  transition: $transition;
 }
 
 @media (min-width: 768px) {
@@ -366,6 +425,10 @@ body {
   line-height: 1;
   margin-bottom: 23px;
   margin-top: 0;
+
+  &_survey {
+     margin-bottom: 30px;
+  }
 }
 
 .register__text {
@@ -379,6 +442,11 @@ body {
   & > span {
       color: #fcd72b;
     }
+}
+
+.register__text_survey {
+  color: $white;
+  margin-bottom: 23px;
 }
 
 .register__privacy {
@@ -411,6 +479,10 @@ body {
   .register__title {
     font-size: 50px;
     margin-bottom: 17px;
+
+    &_survey {
+       margin-bottom: 43px;
+    }
   }
 
   .register__text {
@@ -421,6 +493,8 @@ body {
 
   .register__text_second {
     margin-bottom: 23px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   .register__privacy {
@@ -478,6 +552,23 @@ body {
   }
 }
 
+.it-works__egift-card {
+  color: $light-blue;
+  font-size: 30px;
+  line-height: 1.3;
+  margin-top: 8px;
+  text-align: left;
+
+  & > span {
+    font-size: 45px;
+    white-space: nowrap;
+  }
+}
+
+.it-works__egift-image {
+  margin-bottom: 77px;
+}
+
 .it-works__muted-text {
   color: $muted-text;
   font-size: 22px;
@@ -501,6 +592,13 @@ body {
 
   .it-works .responsive-image {
     margin-bottom: 50px;
+  }
+
+  .it-works__egift-card {
+
+    & > span {
+      font-size: 57px;
+    }
   }
 }
 
@@ -629,6 +727,22 @@ body {
     font-size: 20px;
     line-height: 1.2;
     margin-bottom: 35px;
+  }
+}
+
+/* Bottom navigation section */
+.bottom-navigation {
+  background-color: $dark-gray;
+  position: relative;
+  z-index: 2;
+}
+
+@media (min-width: 768px) {
+
+  .bottom-navigation__nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
   }
 }
 

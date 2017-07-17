@@ -11,169 +11,91 @@
 <body>
 <!-- header -->
 <header>
-  <nav class="navbar">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
-                aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-      </div>
-
-      <div class="collapse navbar-collapse" id="navbar">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="/register">Register</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="/contact-us">Contact</a></li>
-          <li><a href="/dashboard">Dashboard</a></li>
-          <li><a href="/login">Login</a></li>
-        </ul>
-      </div><!-- /.navbar-collapse -->
-    </div>
-  </nav>
+  <nav class="navbar"></nav>
 </header> <!-- header -->
 <!-- main -->
 <section class="container main">
   <div class="row">
     <!-- left columns -->
-    <div class="col-sm-6 register">
-      <div class="row">
-        <div class="col-xs-10 col-xs-offset-1">
-          <img src="/images/MCR_logo_white.png" alt="#" class="register__logo">
-        </div>
-        <h2 class="col-xs-12 col-sm-8 col-sm-offset-2 register__title color_primary collapsed">
-          Congratulations
-        </h2>
-        <div class="col-xs-12 col-sm-8 col-sm-offset-2 collapsed">
-          <p class="register__text register__text_second color_primary">
-            If you win, where would you like your <span>prizes sent</span> to?
+    <div class="col-sm-12 register">
+      <div class="col-sm-6 col-sm-offset-3">
+        <div class="row">
+          <div class="col-xs-10 col-xs-offset-1">
+            <img src="/images/MCR_logo_white.png" alt="#" class="register__logo">
+          </div>
+          <h2 class="col-xs-12 col-sm-8 col-sm-offset-2 register__title color_light-blue collapsed">
+            Welcome
+          </h2>
+          <div class="col-xs-12 col-sm-8 col-sm-offset-2 collapsed">
+            <p class="register__text register__text_second color_light-blue">
+              If you win, where would you like your <span>prizes sent</span> to?
+            </p>
+          </div>
+          <form action="post" class="col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2 sign-up-form">
+            <div class="row center-horizontal">
+              <div class="col-xs-6">
+                <input type="text" name="first-name" class="input input_primary" placeholder="First Name" required>
+              </div>
+              <div class="col-xs-6">
+                <input type="text" name="last-name" class="input input_primary" placeholder="Last Name" required>
+              </div>
+            </div>
+            <div class="row center-horizontal">
+              <p class="col-xs-12 date-of-birth">
+                Date of Birth
+              </p>
+              <div class="col-xs-5">
+                <select name="month" id="month" class="input input_primary" required>
+                  <option value="January">January</option>
+                  <option value="February">February</option>
+                  <option value="March">March</option>
+                </select>
+              </div>
+              <div class="col-xs-3">
+                <select name="day" id="day" class="input input_primary" required>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                </select>
+              </div>
+              <div class="col-xs-4">
+                <select name="year" id="year" class="input input_primary" required>
+                  <option value="1999">1999</option>
+                  <option value="1998">1998</option>
+                  <option value="1997">1997</option>
+                </select>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12">
+                <input type="text" name="address" class="input input_primary" placeholder="Shipping Address" required>
+                <input type="text" name="zip" class="input input_primary" placeholder="ZIP Code" required>
+                <input type="text" name="phone" class="input input_primary" placeholder="Phone Number" required>
+                <input type="submit" class="btn btn_submit" value="Submit">
+              </div>
+            </div>
+          </form>
+          <p class="col-xs-12 col-sm-10 col-sm-offset-1 register__privacy collapsed">
+            <a href="/privacy-policy" class="link_chameleon">Privacy Policy</a> - No purchase necessary.
+            For full official rules, visit <a href="/official-rules" class="link_chameleon">MyClickRewards.com/official-rules</a>
+            or send a self-addressed stamped envelope to: "MyClickRewards", 50 S Old Dixie Hwy, Suite 7, Jupiter, FL
+            33458.
           </p>
         </div>
-        <form action="post" class="col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2 sign-up-form">
-          <div class="row center-horizontal">
-            <div class="col-xs-6">
-              <input type="text" name="first-name" class="input input_primary" placeholder="First Name" required>
-            </div>
-            <div class="col-xs-6">
-              <input type="text" name="last-name" class="input input_primary" placeholder="Last Name" required>
-            </div>
-          </div>
-          <div class="row center-horizontal">
-            <p class="col-xs-12 date-of-birth">
-              Date of Birth
-            </p>
-            <div class="col-xs-5">
-              <select name="month" id="month" class="input input_primary" required>
-                <option value="January">January</option>
-                <option value="February">February</option>
-                <option value="March">March</option>
-              </select>
-            </div>
-            <div class="col-xs-3">
-              <select name="day" id="day" class="input input_primary" required>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-              </select>
-            </div>
-            <div class="col-xs-4">
-              <select name="year" id="year" class="input input_primary" required>
-                <option value="1999">1999</option>
-                <option value="1998">1998</option>
-                <option value="1997">1997</option>
-              </select>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-xs-12">
-              <input type="text" name="address" class="input input_primary" placeholder="Shipping Address" required>
-              <input type="text" name="zip" class="input input_primary" placeholder="ZIP Code" required>
-              <input type="text" name="phone" class="input input_primary" placeholder="Phone Number" required>
-              <input type="submit" class="btn btn_submit" value="Submit">
-            </div>
-          </div>
-        </form>
-        <p class="col-xs-12 col-sm-10 col-sm-offset-1 register__privacy collapsed">
-          <a href="/privacy-policy" class="link_chameleon">Privacy Policy</a> - No purchase necessary.
-          For full official rules, visit <a href="/official-rules" class="link_chameleon">MyClickRewards.com/official-rules</a>
-          or send a self-addressed stamped envelope to: "MyClickRewards", 50 S Old Dixie Hwy, Suite 7, Jupiter, FL
-          33458.
-        </p>
       </div>
-    </div> <!-- left columns -->
-
-    <!-- right columns -->
-    <div class="col-sm-6 it-works">
-      <div class="row">
-        <div class="col-xs-12 col-lg-10 col-lg-offset-1">
-          <div class="row">
-            <div class="col-xs-12">
-              <h2 class="it-works__title text_gray">Here's how it works:</h2>
-            </div>
-            <div class="col-xs-8 pr0">
-              <hr class="hr-dotted hr-dotted_gray">
-              <h3 class="it-works__subtitle text_gray">Register to receive your daily email</h3>
-            </div>
-            <div class="col-xs-4 pl0">
-              <img src="/images/computer_gray.png" alt="#" class="responsive-image">
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-xs-4 pr0">
-              <img src="/images/envelope_gray.png" alt="#" class="responsive-image">
-            </div>
-            <div class="col-xs-8 pl0">
-              <h3 class="it-works__subtitle text_gray">Click link in email to enter drawing</h3>
-            </div>
-            <div class="col-xs-12">
-              <p class="it-works__click-entry text_gray">
-                <img src="/images/one_gray.png" alt="#"> Click = <img src="/images/one_gray.png" alt="#"> Entry
-              </p>
-              <div class="row">
-                <div class="col-xs-12">
-                  <h3 class="it-works__subtitle text_gray">Chances to WIN</h3>
-                </div>
-                <p class="col-xs-5 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-md-5 col-md-offset-1 it-works__checkmarks text_gray pr0">
-                  <img src="/images/checkmark_gray.png" alt="#"> Daily<br>
-                  <img src="/images/checkmark_gray.png" alt="#"> Weekly<br>
-                  <img src="/images/checkmark_gray.png" alt="#"> Monthly
-                </p>
-                <div class="col-xs-6">
-                  <img src="/images/tickets_gray.png" alt="#" class="responsive-image">
-                </div>
-              </div>
-              <hr class="hr-dotted hr-dotted_gray hr-dotted_second">
-              <p class="it-works__muted-text">&mdash; No Purchase Neccessary &mdash;</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> <!-- right columns -->
+    </div>
   </div>
 </section> <!-- main -->
-<section class="about">
+<section class="bottom-navigation">
   <div class="container">
-    <div class="row">
-      <div class="col-xs-12 about__container">
-        <h3 class="about__title color_orange">About My Click Rewards</h3>
-        <p class="about__text">My Click Rewards is the internet's FIRST 100% free online click program that allows
-          people to win prizes for simply opening emails!</p>
-        <p class="about__text">After you register, you will receive an email daily from My Click Rewards. When you
-          receive that email, you must open it and click on the link inside to be added to the daily, weekly, and
-          monthly draw.</p>
-        <p class="about__text">With draws happening daily, weekly and monthly... there are numerous chances to win!</p>
-        <p class="about__text">Easy right?</p>
-        <p class="about__text">Now, you may wonder how all of this is possible... it's all thanks to the sponsors of My
-          Click Rewards.</p>
-        <p class="about__text">You may see their ads from time to time on the My Click Rewards website or in emails you
-          receive. They are the ones that make My Click Rewards completely free!</p>
-        <p class="about__text">They pay for advertising and you get free stuff... it's the best of both worlds!</p>
-        <p class="about__text">Sign up today and take part in the My Click Rewards community, we're excited to have
-          you!</p>
-      </div>
+    <div class="navbar-collapse text-center">
+      <ul class="nav navbar-nav bottom-navigation__nav">
+        <li><a href="/register">Register</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="/contact-us">Contact</a></li>
+        <li><a href="/dashboard">Dashboard</a></li>
+        <li><a href="/login">Login</a></li>
+      </ul>
     </div>
   </div>
 </section>
@@ -188,27 +110,5 @@
 </footer>
 <script src="/js/jquery.min.js"></script>
 <script src="/js/bootstrap.min.js"></script>
-<script>
-  $(document).ready(function () { //after document load
-    var leftBlock = $('.register');
-    var rightBlock = $('.it-works');
-    var navbar = $('.navbar');
-
-    function equalizer() {
-      if ($(document).width() >= 768) { //for tablets and up
-        leftBlock.outerHeight(rightBlock.outerHeight() + navbar.outerHeight()); //equalize columns
-      } else {
-        leftBlock.outerHeight('auto');
-      }
-    }
-
-    equalizer(); //check on load
-
-    $(window).on('resize', function () { //check on resize for animation
-      equalizer();
-    });
-
-  });
-</script>
 </body>
 </html>

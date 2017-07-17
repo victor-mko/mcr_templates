@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width">
+  <title>MCR</title>
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+<!-- header -->
+<header>
+  <nav class="navbar"></nav>
+</header> <!-- header -->
+<!-- main -->
+<section class="container main">
+  <div class="row">
+    <!-- left columns -->
+    <div class="col-sm-12 register">
+      <div class="col-sm-6 col-sm-offset-3">
+        <div class="row">
+          <div class="col-xs-10 col-xs-offset-1">
+            <img src="/images/MCR_logo_white.png" alt="#" class="register__logo">
+          </div>
+          <h2 class="col-xs-12 col-sm-8 col-sm-offset-2 register__title register__title_survey color_light-blue collapsed">
+            Your Short Survey
+          </h2>
+          <div class="col-xs-12 col-sm-8 col-sm-offset-2 collapsed">
+            <p class="register__text register__text_survey">
+              Do you own a home?
+            </p>
+          </div>
+          <form action="post" class="col-xs-10 col-xs-offset-1 col-md-5 col-centered sign-up-form">
+            <div class="row">
+              <div class="col-xs-12">
+                <label class="signup-up-form__survey-radio">
+                  <input type="radio" name="owner" value="Yes" checked> Yes
+                </label>
+                <label class="signup-up-form__survey-radio">
+                  <input type="radio" name="owner" value="No"> No
+                </label>
+              </div>
+              <div class="col-xs-12">
+                <input type="submit" class="btn btn_sign-up" value="Next >">
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> <!-- main -->
+<section class="bottom-navigation">
+  <div class="container">
+    <div class="navbar-collapse text-center">
+      <ul class="nav navbar-nav bottom-navigation__nav">
+        <li><a href="/register">Register</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="/contact-us">Contact</a></li>
+        <li><a href="/dashboard">Dashboard</a></li>
+        <li><a href="/login">Login</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="container">
+    <p class="footer__text">My Click Rewards © 2017 - All Rights Reserved. <span class="hidden-xs">|</span>
+      <br class="visible-xs-block"><a href="/privacy-policy" class="link_chameleon">Privacy Policy</a> <span
+        class="hidden-xs">|</span>
+      <br class="visible-xs-block"><a href="/terms-conditions" class="link_chameleon">Terms and Conditions</a>
+    </p>
+  </div>
+</footer>
+<script src="/js/jquery.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+</body>
+</html>
