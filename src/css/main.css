@@ -14,6 +14,7 @@ $gray: #5f6166;
 $dark-gray: #3e4242;
 $orange: #ffa300;
 $yellow: #ffe218;
+$second-yellow: #fcd72b;
 $green: #9fd619;
 $blue: #3ab0ff;
 $light-blue: #309eff;
@@ -112,6 +113,20 @@ body {
   margin: 0 auto;
 }
 
+@media (max-width: 768px) {
+
+  .xs-text-center {
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) {
+
+  .sm-text-left {
+    text-align: left;
+  }
+}
+
 /* UI */
 .color_primary {
   color: $primary-color;
@@ -125,6 +140,10 @@ body {
   color: $yellow;
 }
 
+.color_second-yellow {
+  color: $second-yellow;
+}
+
 .color_green {
   color: $green;
 }
@@ -135,6 +154,10 @@ body {
 
 .color_light-blue {
   color: $light-blue;
+}
+
+.color_white {
+  color: $white;
 }
 
 .text_gray {
@@ -526,7 +549,7 @@ body {
   padding-top: 2px; /* vertical-align */
 
   & > span {
-      color: #fcd72b;
+      color: $second-yellow;
   }
 
   &_survey {
@@ -784,7 +807,7 @@ body {
 .thanks {
 
   &__number {
-     color: #fcd72b;
+     color: $second-yellow;
      font-size: 50px;
   }
 
@@ -892,6 +915,119 @@ body {
     font-size: 20px;
     line-height: 1.2;
     margin-bottom: 35px;
+  }
+}
+
+/* Account */
+.account {
+  color: $white;
+  padding-bottom: 90px;
+}
+
+.account__title {
+  font-size: 35px;
+  font-weight: 300;
+  margin-bottom: 30px;
+
+  & > span {
+    color: $light-blue;
+    text-transform: capitalize;
+  }
+
+  &_key {
+     margin-bottom: 57px;
+  }
+
+  &_with-pic {
+   position: relative;
+   &::before {
+    background: transparent url(../images/note.png) center no-repeat;
+    content: '';
+    display: inline-block;
+    height: 67px;
+    left: 16px;
+    position: absolute;
+    top: -20px;
+    width: 46px;
+   }
+  }
+}
+
+.account__text {
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 25px;
+  padding-right: 10px;
+}
+
+.account__left-container {
+  margin: 0 auto 70px;
+  max-width: 475px;
+  padding-left: 8.5%;
+}
+
+.account__table {
+  font-size: 18px;
+  margin: 0 auto 30px;
+  width: 80%;
+
+  & tr > td {
+    padding-bottom: 2px;
+    padding-top: 2px;
+  }
+
+  & tr > td:first-child {
+    padding-right: 5px;
+    width: 40%;
+  }
+
+  & tr > td:last-child {
+    color: $orange;
+  }
+}
+
+.account__link {
+  color: $primary-color;
+  display: inline-block;
+  font-size: 14px;
+  padding-left: 5px;
+  padding-right: 5px;
+  text-decoration: none;
+  transition: $transition;
+
+  &_first {
+    padding-left: 0;
+  }
+
+  &:active,
+  &:hover,
+  &:focus {
+     color: $light-blue;
+     text-decoration: underline;
+  }
+}
+
+@media (min-width: 768px) {
+
+  .account {
+    padding-bottom: 185px;
+  }
+
+  .account__left-container {
+    margin-bottom: 0;
+    text-align: left;
+  }
+
+  .account__title_key {
+    margin-bottom: 87px;
+  }
+
+  .account__title_with-pic::before {
+    left: -67px;
+  }
+
+  .account__table {
+    width: 100%;
   }
 }
 
