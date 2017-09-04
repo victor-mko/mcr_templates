@@ -3,3 +3,61 @@
  * all other non-library CSS should be imported here
  * and not linked-to in the HTML
  **/
+
+
+.container {
+    width: 1443px;
+}
+
+body {
+    background: #fff url(../images/body-bg.jpg) center no-repeat;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+
+
+header {
+    background: #272828;
+    & > nav {
+        & > ul {
+            list-style-type: none;
+            width: 100%;
+            margin: 20px auto 10px;
+            text-align: center;
+            & > li {
+                margin: 0 15px;
+                display: inline-block;
+                & > a {
+                    color: white;
+                    font-size: 15px;
+                    font-weight: bold;
+                    &:hover {
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.left-bar {
+    position: relative;
+    background: #484a49;
+    & > .logo-box {
+        position: absolute;
+        top: -50px;
+        left: 57px;
+        background: #18a6d1;
+        border-radius: 0 0 60px 60px;
+        width: 293px;
+        padding: 20px;
+        margin: 0 auto;
+        box-shadow: 11px 11px 31px 0px;
+        & > img {
+            width: 252px;
+            display: block;
+            margin: 0 auto;
+        }
+    }
+}
