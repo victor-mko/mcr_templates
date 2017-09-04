@@ -4,14 +4,18 @@
  * and not linked-to in the HTML
  **/
 
+ h2 {
+     font-size: 38px;
+ }
+ h3 {
+    font-size:20px;
+ }
 
-.container {
-    width: 1443px;
-}
 
 body {
     background: #fff url(../images/body-bg.jpg) center no-repeat;
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: white;
 }
 
 
@@ -44,6 +48,7 @@ header {
 .left-bar {
     position: relative;
     background: #484a49;
+    padding: 0 15px;
     & > .logo-box {
         position: absolute;
         top: -50px;
@@ -59,5 +64,9 @@ header {
             display: block;
             margin: 0 auto;
         }
+    }
+    & > .form-top-text {
+        text-align: center;
+        margin-top: 140px;
     }
 }
