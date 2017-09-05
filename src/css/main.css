@@ -18,31 +18,47 @@ body {
     color: white;
 }
 
+.form-control {
+    border-radius: 0;
+}
 
+.shadow-left {
+    box-shadow: -5px -5px 26px 0px black;
+}
+
+.pd-lr-5px {
+    padding-left: 5px;
+    padding-right: 5px; 
+}
 
 header {
     background: #272828;
-    & > nav {
-        & > ul {
-            list-style-type: none;
-            width: 100%;
-            margin: 20px auto 10px;
-            text-align: center;
-            & > li {
-                margin: 0 15px;
-                display: inline-block;
-                & > a {
+}
+
+
+nav {
+    & > ul {
+        list-style-type: none;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        & > li {
+            margin: 0 15px;
+            display: inline-block;
+            & > a {
+                color: white;
+                font-size: 15px;
+                padding: 20px 15px;
+                font-weight: bold;
+                &:hover {
                     color: white;
-                    font-size: 15px;
-                    font-weight: bold;
-                    &:hover {
-                        color: white;
-                    }
                 }
             }
         }
     }
 }
+
+
 
 
 .left-bar {
@@ -58,7 +74,7 @@ header {
         width: 293px;
         padding: 20px;
         margin: 0 auto;
-        box-shadow: 11px 11px 31px 0px;
+        box-shadow: 11px 11px 31px 0px black;
         & > img {
             width: 252px;
             display: block;
@@ -69,4 +85,69 @@ header {
         text-align: center;
         margin-top: 140px;
     }
+    & > form label {
+        height: 10px;
+    }
+    & > form select {
+        padding: 0;
+    }
+    & > form .button-box {
+    }
+    & > form .btn-form {
+        background-color: #18a6d1;
+        border-radius: 10px;
+        color: white;
+        display: block;
+        border-width: 2px;
+        border-style: outset;
+        border-color: buttonface;
+        font-weight: bold;
+        padding: 13.5px 35px;
+        text-decoration: none;
+        margin: 10px auto 20px;
+        cursor: pointer;
+        font-size: 28px;
+    }
+}
+
+.right-bar {
+    position: relative;
+}
+
+.content-header-baner-box {
+    position: absolute;
+    left: 15px;
+    right: 15px;
+    top: 5px;
+    background: #19a6d3;
+    box-shadow: 2px 3px 15px black;
+    text-align: center;
+    & > h1 {
+        font-weight: bold;
+        text-shadow: -3px 1px 1px black;
+    }
+}
+
+
+
+
+
+
+
+
+.about {
+    background: #272928;
+    padding: 10px 100px 100px 180px;
+    font-size: 23px;
+    line-height: 29px;
+    font-weight: 500;
+}
+.about__text {
+    margin-bottom: 35px;
+}
+
+
+.footer {
+    background: #2d2d35;
+    padding: 50px 10px 5px 90px;
 }

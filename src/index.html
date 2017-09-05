@@ -11,7 +11,7 @@
   <body>
     <!-- template markup below -->
     <div class="container">
-      <header class="row">
+      <header class="row shadow-left">
         <nav class="col-md-offset-4 col-md-8">
           <ul>
             <li><a href="">Home</a></li>
@@ -23,7 +23,7 @@
         </nav>
       </header>
       <div class="main row">
-        <div class="left-bar col-md-4">
+        <div class="left-bar col-md-4 shadow-left">
           <div class="row logo-box">
             <img src="images/MCR_logo_white.png" alt="My Click Rewards">
           </div>
@@ -51,7 +51,7 @@
               <label for="zipCode">Zip Code:</label>
               <input type="text" class="form-control" id="zipCode">
             </div>
-            <div class="form-group col-sm-4">
+            <div class="form-group col-sm-4 pd-lr-5px">
               <label for="dateOfBirth">Date of Birth:</label>
               <select class="form-control" id="dateOfBirthMonth">
                   <option value="1">January</option>
@@ -68,7 +68,7 @@
                   <option value="12">December</option>
               </select>
             </div>
-            <div class="form-group col-sm-2">
+            <div class="form-group col-sm-2 pd-lr-5px">
               <label for="dateOfBirthDay"></label>
               <select class="form-control" id="dateOfBirthDay">
                   <option value="1">1</option>
@@ -104,8 +104,8 @@
                   <option value="31">31</option>
                 </select>
             </div>
-            <div class="form-group col-sm-2">
-
+            <div class="form-group col-sm-2 pd-lr-5px">
+              <label for="dateOfBirthYear"></label>
               <select class="form-control" id="dateOfBirthYear">
                   <option value="1999">1999</option>
                   <option value="1998">1998</option>
@@ -220,7 +220,7 @@
                 <input type="email" class="form-control" id="confirmEmail">
             </div>
             
-            <div class="form-group col-sm-12">
+            <div class="form-group col-sm-12"> 
               <div class="radio">
                 <label>
                   <input type="radio" name="accept18years" id="accept18years" value="18+">
@@ -229,13 +229,50 @@
                 </label>
               </div>
             </div>
-            <button type="submit" class="btn btn-default">Submit</button>
+            <div class="col-sm-12 button-box">
+              <button type="submit" class="btn btn-form">Submit</button>
+            </div>
           </form>
           
         </div>
-        <div class="right-bar col-md-8"></div>
+
+
+
+        <div class="right-bar col-md-8">
+          <div class="row content-header-baner-box">
+            <h1 class="content-header-baner">Will YOU Be The Next Winner?</h1>
+          </div>
+        </div>
       </div>
     </div>
+      <div class="container about shadow-left">
+        <div class="row">
+          <div class="col-xs-12 about__container">
+            <h3 class="about__title color_orange">About My Click Rewards</h3>
+            <p class="about__text">My Click Rewards is the internet's FIRST 100% free online click program that allows
+              people to win prizes for simply opening emails!</p>
+            <p class="about__text">After you register, you will receive an email daily from My Click Rewards. When you
+              receive that email, you must open it and click on the link inside to be added to the daily drawing.</p>
+            <p class="about__text">With drawings happening daily... there are numerous chances to win!</p>
+            <p class="about__text">Easy right?</p>
+            <p class="about__text">Now, you may wonder how all of this is possible... it's all thanks to the sponsors of My
+              Click Rewards.</p>
+            <p class="about__text">You may see their ads from time to time on the My Click Rewards website or in emails you
+              receive. They are the ones that make My Click Rewards completely free!</p>
+            <p class="about__text">They pay for advertising and you get free stuff... it's the best of both worlds!</p>
+            <p class="about__text">Sign up today and take part in the My Click Rewards community, we're excited to have
+              you!</p>
+          </div>
+        </div>
+      </div>
+      <footer class="container footer">
+        <div class="row">
+          <div class="col-xs-12 footer__container">
+            <p class="">My Click Rewards © 2017 - All Rights Reserved. | <a href="">Privacy Policy</a> | <a href="">Terms and Conditions</a> | <a href="">Official Rules</a></p>
+          </div>
+        </div>
+      </footer>
+
     <!-- template markup ends -->
     <script src="/js/jquery.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
