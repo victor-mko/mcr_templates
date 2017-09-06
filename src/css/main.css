@@ -11,19 +11,36 @@
     font-size:20px;
  }
 
+ h1, h2, h3, h4, h5, h6 {
+     font-weight: bold; 
+ }
 
 body {
-    background: #fff url(../images/body-bg.jpg) center no-repeat;
+    background: radial-gradient(ellipse at center, #ffffff 55%,#22abd5 100%);
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     color: white;
+}
+
+.main {
+    background: #fff;
 }
 
 .form-control {
     border-radius: 0;
 }
 
-.shadow-left {
+.shadow-lft {
     box-shadow: -5px -5px 26px 0px black;
+}
+.shadow-rgt-bt { 
+    box-shadow: 2px 3px 15px black;
+}
+
+.shadow-lft-btn {
+    box-shadow: -5px 5px 20px -3px black;
+}
+.bg-blue {
+    background: #19a6d3;
 }
 
 .pd-lr-5px {
@@ -49,6 +66,7 @@ nav {
                 color: white;
                 font-size: 15px;
                 padding: 20px 15px;
+                display: inline-block;
                 font-weight: bold;
                 &:hover {
                     color: white;
@@ -67,7 +85,7 @@ nav {
     padding: 0 15px;
     & > .logo-box {
         position: absolute;
-        top: -50px;
+        top: -61px;
         left: 57px;
         background: #18a6d1;
         border-radius: 0 0 60px 60px;
@@ -83,7 +101,7 @@ nav {
     }
     & > .form-top-text {
         text-align: center;
-        margin-top: 140px;
+        margin-top: 120px;
     }
     & > form label {
         height: 10px;
@@ -110,6 +128,12 @@ nav {
     }
 }
 
+
+
+
+
+
+
 .right-bar {
     position: relative;
 }
@@ -118,9 +142,7 @@ nav {
     position: absolute;
     left: 15px;
     right: 15px;
-    top: 5px;
-    background: #19a6d3;
-    box-shadow: 2px 3px 15px black;
+    top: -15px;
     text-align: center;
     & > h1 {
         font-weight: bold;
@@ -128,21 +150,98 @@ nav {
     }
 }
 
+.content-box {
 
+}
 
+.tariff-box {
+    text-align: center;
+    margin-top: 75px;
+}
 
+.tariff {
+    border-radius: 20px;
+    padding-top: 10px;
+    & > h3 {
+        font-size: 18px;
+        margin: 0;
+    }
+    & > .tariff-img {
+        display: block;
+        margin: 10px auto 10px;
+        width: 100%;
+        & > img {
+            width: 70%;
+        }
+    }
+    & > .tariff-text {
+        color: black;
+        font-weight: bold;
+        text-decoration: underline;
+    }
+}
+
+.video-header {
+    border-radius: 4px;
+    margin: 35px 0 25px;
+    overflow: hidden;
+    & > p {
+        line-height: 53px;
+        color: rgb(0,0,0);
+        font-size: 46px;
+        margin: 10px 0 5px;
+        font-family: 'Lobster', cursive;
+        text-shadow: -2px -1px 0 white;
+        text-align: center;
+    }
+}
+.video-box {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.fbvideo {
+    border:none;
+    overflow:hidden; 
+    width:35vw;
+    display: block;
+    height:20vw ;
+    margin: 0 auto;
+}
+
+.video-text {
+    text-align: center;
+    color: black;
+    font-size: 10px;
+}
 
 
 
 
 .about {
-    background: #272928;
     padding: 10px 100px 100px 180px;
     font-size: 23px;
     line-height: 29px;
     font-weight: 500;
+    background: 
+        url(../images/star-1.png) 5px 20px no-repeat,
+        url(../images/star-2.png) right 20px no-repeat;
+    background-color: #272928;
+    background-size: 20%;
 }
-.about__text {
+.about-title-box {
+    
+}
+.about-title {
+    line-height: 73px;
+    text-align: center;
+    color: rgb(24,166,209);
+    margin-bottom: 45px;
+    font-size: 76px;
+    font-family: 'Lobster', cursive;
+    
+}
+.about-text {
     margin-bottom: 35px;
 }
 
@@ -150,4 +249,5 @@ nav {
 .footer {
     background: #2d2d35;
     padding: 50px 10px 5px 90px;
+
 }
