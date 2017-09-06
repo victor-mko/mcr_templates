@@ -136,6 +136,7 @@ nav {
 
 .right-bar {
     position: relative;
+    border-left: 10px solid #19a6d3;
 }
 
 .content-header-baner-box {
@@ -227,7 +228,7 @@ nav {
         url(../images/star-1.png) 5px 20px no-repeat,
         url(../images/star-2.png) right 20px no-repeat;
     background-color: #272928;
-    background-size: 20%;
+    background-size: 15%;
 }
 .about-title-box {
     
@@ -237,7 +238,7 @@ nav {
     text-align: center;
     color: rgb(24,166,209);
     margin-bottom: 45px;
-    font-size: 76px;
+    font-size: 60px;
     font-family: 'Lobster', cursive;
     
 }
