@@ -12,13 +12,25 @@
     <!-- template markup below -->
     <div class="container">
       <header class="row shadow-lft">
-        <nav class="col-md-offset-4 col-md-8">
+          <div class="dropdown hidden-lg col-12">
+              <button class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                <span class="burger-nav"></span>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                  <li><a class="menu-item" href="#">Home</a></li>
+                  <li><a class="menu-item" href="#">Login</a></li>
+                  <li><a class="menu-item" href="#">My Account</a></li>
+                  <li><a class="menu-item" href="#">About</a></li>
+                  <li><a class="menu-item" href="#">Contact Us</a></li>
+              </ul>
+            </div>
+        <nav class="col-md-offset-4 col-md-8 visible-lg">
           <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">Login</a></li>
-            <li><a href="">My Account</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Contact Us</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Login</a></li>
+            <li><a href="#">My Account</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact Us</a></li>
           </ul>
         </nav>
       </header>
@@ -35,23 +47,23 @@
             </p>
           </div>
           <form class="row ">
-            <div class="form-group col-sm-6">
+            <div class="form-group col-xs-6">
               <label for="firstName">First Name:</label>
               <input type="text" class="form-control" id="firstName">
             </div>
-            <div class="form-group col-sm-6">
+            <div class="form-group col-xs-6">
               <label for="lastName">Last Name:</label>
               <input type="text" class="form-control" id="lastName">
             </div>
-            <div class="form-group col-sm-12">
+            <div class="form-group col-sm-12 col-xs-6">
               <label for="streetAdress">Street Adress:</label>
               <input type="text" class="form-control" id="streetAdress">
             </div>
-            <div class="form-group col-sm-4">
+            <div class="form-group col-xs-6 col-sm-4">
               <label for="zipCode">Zip Code:</label>
               <input type="text" class="form-control" id="zipCode">
             </div>
-            <div class="form-group col-sm-4 pd-lr-5px">
+            <div class="form-group col-xs-4  pd-lr select">
               <label for="dateOfBirth">Date of Birth:</label>
               <select class="form-control" id="dateOfBirthMonth">
                   <option value="1">January</option>
@@ -68,7 +80,7 @@
                   <option value="12">December</option>
               </select>
             </div>
-            <div class="form-group col-sm-2 pd-lr-5px">
+            <div class="form-group col-xs-4 col-sm-2 pd-lr select">
               <label for="dateOfBirthDay"></label>
               <select class="form-control" id="dateOfBirthDay">
                   <option value="1">1</option>
@@ -104,7 +116,7 @@
                   <option value="31">31</option>
                 </select>
             </div>
-            <div class="form-group col-sm-2 pd-lr-5px">
+            <div class="form-group col-sm-2 col-xs-4 pd-lr select">
               <label for="dateOfBirthYear"></label>
               <select class="form-control" id="dateOfBirthYear">
                   <option value="1999">1999</option>
@@ -199,7 +211,7 @@
                   <option value="1910">1910</option>
                 </select>
             </div>
-            <div class="form-group col-sm-6">
+            <div class="form-group col-xs-6 select">
                 <label for="gender">Gender:</label>
                 <select class="form-control" id="gender">
                     <option value="M">Male</option>
@@ -207,20 +219,20 @@
                     <option value="O">Other</option>
                 </select>
             </div>
-            <div class="form-group col-sm-6">
+            <div class="form-group col-xs-6 imput-phone">
                 <label for="phoneNumber">Phone Number:</label>
                 <input type="tel" class="form-control" id="phoneNumber">
             </div>
-            <div class="form-group col-sm-12">
+            <div class="form-group col-xs-12">
                 <label for="email">Email:</label>
                 <input type="email" class="form-control" id="email">
             </div>
-            <div class="form-group col-sm-12">
+            <div class="form-group col-xs-12">
                 <label for="confirmEmail">Confirm Email:</label>
                 <input type="email" class="form-control" id="confirmEmail">
             </div>
             
-            <div class="form-group col-sm-12"> 
+            <div class="form-group col-xs-12"> 
               <div class="radio">
                 <label>
                   <input type="radio" name="accept18years" id="accept18years" value="18+">
@@ -243,21 +255,21 @@
             <h1 class="content-header-baner">Will YOU Be The Next Winner?</h1>
           </div>
           <div class="row content-box">
-            <div class="tariff-box col-md-4">
+            <div class="tariff-box col-xs-4">
               <div class="tariff bg-blue shadow-rgt-bt"> 
                 <h3>Daily Prize Giveaway</h3>
                 <a href="#" class="tariff-img"><img src="images/a_generic_25.png" alt="$25 Amazon Gift Card"></a>
                 <a href="#" class="tariff-text">$25 Amazon Gift Card</a>
               </div>
             </div>
-            <div class="tariff-box col-md-4">
+            <div class="tariff-box col-xs-4">
                 <div class="tariff bg-blue shadow-rgt-bt"> 
               <h3>Weekly Prize Giveaway</h3>
               <a href="#" class="tariff-img"><img src="images/a_only_card.png" alt="$350 Amazon Gift Card"></a>
               <a href="#" class="tariff-text">$350 Amazon Gift Card</a>
             </div> 
           </div>
-            <div class="tariff-box col-md-4">
+            <div class="tariff-box col-xs-4">
                 <div class="tariff bg-blue shadow-rgt-bt"> 
               <h3>Monthly Prize Giveaway</h3>
               <a href="#" class="tariff-img"><img src="images/a_only_card.png" alt="$1,000 Amazon Gift Card"></a>
