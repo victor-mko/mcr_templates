@@ -23,7 +23,7 @@
         </nav>
       </header>
       <div class="main row">
-        <div class="left-bar col-md-4 shadow-lft">
+        <div class="left-bar container-height col-md-4 shadow-lft">
           <div class="row logo-box">
             <img src="images/MCR_logo_white.png" alt="My Click Rewards">
           </div>
@@ -238,7 +238,7 @@
 
 
 
-        <div class="right-bar col-md-8">
+        <div class="right-bar container-height col-md-8">
           <div class="row content-header-baner-box bg-blue shadow-rgt-bt">
             <h1 class="content-header-baner">Will YOU Be The Next Winner?</h1>
           </div>
@@ -321,5 +321,22 @@
     <!-- template markup ends -->
     <script src="/js/jquery.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
+    <script>
+        function setEqualHeight(columns){
+            var tallestcolumn = 0;
+            columns.each(
+              function(){
+                currentHeight = $(this).height();
+                if(currentHeight > tallestcolumn){
+                  tallestcolumn = currentHeight;
+                }
+              }
+            );
+            columns.height(tallestcolumn);
+          }
+          $(document).ready(function() {
+            setEqualHeight($(".container-height"));
+          });
+    </script>
   </body>
 </html>

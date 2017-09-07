@@ -136,13 +136,15 @@ nav {
 
 .right-bar {
     position: relative;
-    border-left: 10px solid #19a6d3;
+    border-left: 20px solid #19a6d3;
+    border-right: 20px solid #19a6d3;
+    box-shadow: 3px 0px 20px black inset, -3px 0px 20px black inset;
 }
 
 .content-header-baner-box {
     position: absolute;
-    left: 15px;
-    right: 15px;
+    left: -5px;
+    right: -5px;
     top: -15px;
     text-align: center;
     & > h1 {
@@ -205,6 +207,7 @@ nav {
     border:none;
     overflow:hidden; 
     width:35vw;
+    max-width: 550px;
     display: block;
     height:20vw ;
     margin: 0 auto;
@@ -220,8 +223,7 @@ nav {
 
 
 .about {
-    padding: 10px 100px 100px 180px;
-    font-size: 23px;
+    padding: 10px 100px 50px 10%;
     line-height: 29px;
     font-weight: 500;
     background: 
@@ -243,7 +245,8 @@ nav {
     
 }
 .about-text {
-    margin-bottom: 35px;
+    margin-bottom: 16px;
+    font-size: 18px;
 }
 
 
