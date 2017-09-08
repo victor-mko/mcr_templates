@@ -141,6 +141,17 @@ nav {
 }
 
 
+
+
+
+/* ///////////lEFT BAR\\\\\\\\\\\\\\\ */
+
+
+
+
+
+
+
 .left-bar {
     position: relative;
     background: #484a49;
@@ -211,6 +222,13 @@ nav {
 
 
 
+
+/* //////////////////RIGHT BAR \\\\\\\\\\\\\\\\ */
+
+
+
+
+
 .right-bar {
     position: relative;
     border-left: 20px solid #19a6d3;
@@ -239,7 +257,7 @@ nav {
     }
 }
 
-.content-header-baner-box {
+.header-baner-box {
     position: absolute;
     left: -5px;
     right: -5px;
@@ -320,6 +338,10 @@ nav {
 
 
 
+
+/* ////////////////////FOOTER AND ABOUT IN INDEX\\\\\\\\\\\\\\\\ */
+
+
 .about {
     padding: 10px 100px 50px 10%;
     line-height: 29px;
@@ -340,8 +362,8 @@ nav {
     margin-bottom: 45px;
     font-size: 60px;
     font-family: 'Lobster', cursive;
-    
 }
+
 .about-text {
     margin-bottom: 16px;
     font-size: 18px;
@@ -377,11 +399,9 @@ nav {
     .img-arrows {
         display: none;
     }
-    .content-header-baner-box {
-        & > h1 {
-            font-size: 28px;
-            margin-top: 14px;
-        }
+    .header-baner-box h1 {
+        font-size: 28px;
+        margin-top: 14px;
     }
     .star-mini-1, .star-mini-2 {
         display: none;
@@ -450,7 +470,7 @@ nav {
 }
 
 @media screen and (max-width: 767px) {
-    .content-header-baner-box {
+    .header-baner-box {
         position: relative;
         left: 0;
         right: 0;
@@ -473,6 +493,7 @@ nav {
         margin-bottom: 25px;
         font-size: 28px;
     }
+    
     .about-text {
         font-size: 14px;
         margin-bottom: 5px;
@@ -538,3 +559,134 @@ nav {
     }
     
 }
+
+
+
+
+ 
+
+/* //////////ABOUT\\\\\\\\\\ */
+.about-page {
+    padding-bottom: 50px;
+}
+.about-page .left-bar {
+    padding-bottom: 40px;
+    padding-top: 90px;
+}
+
+.about-page .header-baner-box {
+    margin: 0;
+    z-index: 15;
+    top: 125px;
+    box-shadow: 4px 4px 15px black;
+}
+
+.about-page .header-baner {
+    text-shadow: none;
+}
+
+.about-page .about-title, .about-page .about-text {
+    color: rgb(105,108,109);
+}
+.about-page .about-title {
+    font-size: 50px;
+    line-height: 60px;
+}
+.about-page .about-text {
+    padding: 0 10px;
+}
+
+
+.about-page .tariff-box {
+    margin-top: 35px;
+    padding: 0 10%;
+}
+
+
+
+@media screen and (max-width: 1200px) {
+
+    .about-page .about-title {
+        line-height: 40px;
+        font-size: 40px;
+    }
+}
+
+
+@media screen and (max-width: 991px) {
+    .about-page .left-bar {
+        padding-bottom: 40px;
+        padding-top: 0;
+    }
+    
+    .about-page .header-baner-box {
+        margin: 0;
+        z-index: 15;
+        top: 175px;
+        box-shadow: 4px 4px 15px black;
+    }
+    .about-page .form-top-text {
+        margin-top: 70px;
+    }
+    .about-page .tariff-box {
+        margin-top: 35px;
+        padding: 0 15px 40px;
+    }
+
+    .about-page .about-title {
+        line-height: 51px;
+        margin-bottom: 25px;
+        font-size: 34px;
+    }
+    .about-page .about-text {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .about-page .header-baner-box {
+        top: 30px;
+    }
+    .about-page .form-top-text {
+        margin-top: 30px;
+    }
+    .about-page .about-title {
+        line-height: 32px;
+        margin-bottom: 25px;
+        font-size: 28px;
+    }
+    
+    .about-page .about-text {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+    
+    
+}
+
+@media screen and (max-width: 640px) {
+    .about-page .tariff-box {
+        width: 60%;
+        float: none;
+        margin: 20px auto 20px;
+        padding-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .about-page .tariff-box {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 360px) {
+
+}
+/* //////////ABOUT\\\\\\\\\\ */
+/* //////////ABOUT\\\\\\\\\\ */
+/* //////////ABOUT\\\\\\\\\\ */
+/* //////////ABOUT\\\\\\\\\\ */
+/* //////////ABOUT\\\\\\\\\\ */
+
+
+
