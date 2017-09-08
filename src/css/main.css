@@ -682,7 +682,20 @@ nav {
 @media screen and (max-width: 360px) {
 
 }
-/* //////////ABOUT\\\\\\\\\\ */
+/* //////////CONTACT\\\\\\\\\\ */
+.contact-page .about-title, .contact-text {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #4B4949;    
+}
+
+.contact-text {
+    padding: 0 30px 40px;
+}
+
+.contact-page .about-title {
+    margin-bottom: 0;
+}
+
 /* //////////ABOUT\\\\\\\\\\ */
 /* //////////ABOUT\\\\\\\\\\ */
 /* //////////ABOUT\\\\\\\\\\ */
