@@ -351,7 +351,7 @@ nav {
     background-size: 15%;
 }
 .about-title-box {
-    
+    text-align: center;
 }
 .about-title {
     line-height: 73px;
@@ -445,7 +445,7 @@ nav {
     }
     .fbvideo {
         width: 70vw;
-        height: 60vh;
+        height: 350px;
     }
     .video-text {
         padding: 30px;
@@ -483,8 +483,7 @@ nav {
         }
     }
     .fbvideo {
-        width: 70vw;
-        height: 45vh;
+        height: 300px;
     }
     .about-title {
         line-height: 32px;
@@ -516,7 +515,7 @@ nav {
     }
     .fbvideo {
         width: 80vw;
-        height: 50vh;
+        height: 280px;
     }
     .video-header {
         & > p {
@@ -536,16 +535,25 @@ nav {
     }
     .fbvideo {
         width: 80vw;
-        height: 40vh;
+        height: 240px;
     }
 }
-
+@media screen and (max-width: 460px) {
+    .fbvideo {
+        width: 80vw;
+        height: 210px;
+    }
+}
 @media screen and (max-width: 360px) {
     .select {
         width: 50%;
     }
     .imput-phone {
         width: 100%;
+    }
+    .fbvideo {
+        width: 80vw;
+        height: 165px;
     }
     .tariff {
         & > h3 {
@@ -698,7 +706,7 @@ nav {
 .log-in-page .right-bar {
     padding-top: 50px;
 }
-.log-in-page .about-title, .log-in-form {
+.log-in-page .about-title, .log-in-form, .center-text {
     font-family: Arial, Helvetica, sans-serif;
     color: #000;    
 }
@@ -727,9 +735,20 @@ nav {
         width: 80%;
     }
 }
-/* //////////ABOUT\\\\\\\\\\ */
-/* //////////ABOUT\\\\\\\\\\ */
-/* //////////ABOUT\\\\\\\\\\ */
+/* //////////My Account\\\\\\\\\\ */
+.log-in-form p {
+    text-align: center;
+    font-weight: 600;
+    padding: 0 40px;
+}
 
+/* //////////Password Reset\\\\\\\\\\ */
+
+/* //////////SURVEY\\\\\\\\\\ */
+.survey .about-title, .center-text {
+    font-size: 26px;
+    line-height: 38px;
+    color: #000;  
+}
 
 
