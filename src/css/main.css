@@ -3,6 +3,33 @@
  * all other non-library CSS should be imported here
  * and not linked-to in the HTML
  **/
+ .fadeOut3 {
+    animation: fadeOutDown 3s ease-in-out infinite;
+    -webkit-animation: fadeOutDown 3s ease-in-out infinite;
+  }
+  
+  .fadeOut2 {
+    animation: fadeOutDown 2s ease-in-out infinite;
+    -webkit-animation: fadeOutDown 2s ease-in-out infinite;
+  }
+  
+  .fadeOut4 {
+    animation: fadeOutDown 4s ease-in-out infinite;
+    -webkit-animation: fadeOutDown 4s ease-in-out infinite;
+  }
+  
+  
+
+ @keyframes fadeOutDown {
+    from {
+        opacity: 1;
+      }
+    
+      to {
+        opacity: 0;
+      } 
+ }
+
 
  h2 {
      font-size: 38px;
@@ -110,8 +137,6 @@ nav {
 }
 
 
-
-
 .left-bar {
     position: relative;
     background: #484a49;
@@ -131,6 +156,9 @@ nav {
             display: block;
             margin: 0 auto;
         }
+    }
+    & > form {
+        padding-bottom: 20px;
     }
     & > .form-top-text {
         text-align: center;
@@ -162,7 +190,19 @@ nav {
 }
 
 
-
+.img-arrows {
+    position: absolute;
+    top:11.3936%;
+    margin-top:-24.5px;
+    left:-135px;
+    width:10vw; 
+    height: 20vw;
+}
+.arrow {
+    background: url(../images/right3green.png) no-repeat;
+    height: 10vw;
+    width: 125px;
+}
 
 
 
@@ -172,6 +212,27 @@ nav {
     border-left: 20px solid #19a6d3;
     border-right: 20px solid #19a6d3;
     box-shadow: 3px 0px 20px black inset, -3px 0px 20px black inset;
+}
+
+.star-mini-1 {
+    position: absolute;
+    left: -43px;
+    top: -5px;
+    z-index: 10;
+    width:40px;
+    & > img {
+        width: 45px;
+    }
+}
+.star-mini-2 {
+    position: absolute;
+    z-index: 10;
+    right: -25px;
+    top: -50px;
+    width:20px;
+    & > img {
+        width: 30px;
+    }
 }
 
 .content-header-baner-box {
@@ -239,10 +300,10 @@ nav {
 .fbvideo {
     border:none;
     overflow:hidden; 
-    width:35vw;
+    width:45vw;
     max-width: 600px;
     display: block;
-    height:20vw ;
+    height:27vw ;
     margin: 0 auto;
 }
 
@@ -260,8 +321,8 @@ nav {
     line-height: 29px;
     font-weight: 500;
     background: 
-        url(../images/star-1.png) 5px 20px no-repeat,
-        url(../images/star-2.png) right 20px no-repeat;
+        url(../images/star-1.png) 5% 20px no-repeat,
+        url(../images/star-2.png) 95% 20px no-repeat;
     background-color: #272928;
     background-size: 15%;
 }
@@ -290,15 +351,36 @@ nav {
 }
 
 
+@media screen and ( min-width: 992px) {
+    .main {
+        display: table;
+    }
+    .row-box {
+        display: table-row;
+    }
+    .left-bar, .right-bar {
+        display: table-cell;
+        float: none;
+    }
+}
+
+
+
 @media screen and (max-width: 1200px) {
     .left-bar .logo-box {
         left: 15px;
+    }
+    .img-arrows {
+        display: none;
     }
     .content-header-baner-box {
         & > h1 {
             font-size: 28px;
             margin-top: 14px;
         }
+    }
+    .star-mini-1, .star-mini-2 {
+        display: none;
     }
     .tariff {
         & > h3 {
@@ -341,7 +423,10 @@ nav {
     }
     .fbvideo {
         width: 70vw;
-        height: 40vh;
+        height: 60vh;
+    }
+    .video-text {
+        padding: 30px;
     }
     .about {
         padding: 10px 10% 30px;
@@ -353,7 +438,6 @@ nav {
     }
     .about-text {
         font-size: 16px;
-        text-align: center;
     }
     .footer {
     padding: 20px 10%;
@@ -376,6 +460,10 @@ nav {
             font-size: 12px;
         }
     }
+    .fbvideo {
+        width: 70vw;
+        height: 45vh;
+    }
     .about-title {
         line-height: 32px;
         margin-bottom: 25px;
@@ -384,7 +472,6 @@ nav {
     .about-text {
         font-size: 14px;
         margin-bottom: 5px;
-        text-align: center;
     }
     
     
@@ -404,6 +491,10 @@ nav {
             font-size: 16px;
         }
     }
+    .fbvideo {
+        width: 80vw;
+        height: 50vh;
+    }
     .video-header {
         & > p {
             font-size: 28px;
@@ -419,6 +510,10 @@ nav {
             font-size: 20px;
             line-height:30px;
         }
+    }
+    .fbvideo {
+        width: 80vw;
+        height: 40vh;
     }
 }
 
