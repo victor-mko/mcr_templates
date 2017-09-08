@@ -185,25 +185,23 @@ nav {
     & > form select {
         padding: 0;
     }
-    & > form .button-box {
-    }
-    & > form .btn-form {
-        background-color: #18a6d1;
-        border-radius: 10px;
-        color: white;
-        display: block;
-        border-width: 2px;
-        border-style: outset;
-        border-color: buttonface;
-        font-weight: bold;
-        padding: 13.5px 35px;
-        text-decoration: none;
-        margin: 10px auto 20px;
-        cursor: pointer;
-        font-size: 28px;
-    }
 }
 
+.btn-form {
+    background-color: #18a6d1;
+    border-radius: 10px;
+    color: white;
+    display: block;
+    border-width: 2px;
+    border-style: outset;
+    border-color: buttonface;
+    font-weight: bold;
+    padding: 13.5px 35px;
+    text-decoration: none;
+    margin: 10px auto 20px;
+    cursor: pointer;
+    font-size: 28px;
+}
 
 .img-arrows {
     position: absolute;
@@ -696,7 +694,39 @@ nav {
     margin-bottom: 0;
 }
 
-/* //////////ABOUT\\\\\\\\\\ */
+/* //////////LOG IN\\\\\\\\\\ */
+.log-in-page .right-bar {
+    padding-top: 50px;
+}
+.log-in-page .about-title, .log-in-form {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000;    
+}
+.log-in-page .about-title {
+    font-size: 34px;
+}
+.log-in-page .form-group {
+    width: 50%;
+    margin: 10px auto 0;
+}
+.forgot-password {
+    display: block;
+    margin: 5px 0 40px 15px;
+    color: #337ab7;
+}
+.register {
+    display: block;
+    margin: 20px auto 40px;
+    text-align: center;
+    padding: 0 20px;
+    color: #337ab7;
+}
+
+@media screen and (max-width: 560px) {
+    .log-in-page .form-group {
+        width: 80%;
+    }
+}
 /* //////////ABOUT\\\\\\\\\\ */
 /* //////////ABOUT\\\\\\\\\\ */
 /* //////////ABOUT\\\\\\\\\\ */
